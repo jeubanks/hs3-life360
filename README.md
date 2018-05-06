@@ -98,5 +98,14 @@ Script Installation:
             - pip3 install requests
             - test presence-checker.py (after modifying per notes above)
 
+- Script Scheduling
+    - To auto update the status within Homeseer you will need to schedule the script to execute periodically.  
+    - Windows
+        - Setup a task scheduler that calls the presence-checker.bat file.
+        - Set the execute time to what suits your uses.  I adjusted mine to run ever 1 minute
+    - Linux
+        - A shell script should be used to activate the virtual environment then call presence-checker.py
+        I haven't updated this piece yet, as I had not been using a virtual environment and was running this on a raspberry pi.
+        
 Notes:  I'll flesh out the Linux install later, it's actually a lot simpler than Windows but I'm doing this now as a
 request for a Windows install/documentation.
